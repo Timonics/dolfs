@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Spline+Sans:wght@300..700&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gray-200 text-gray-900;
+    font-family: "Inter", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Outfit", sans-serif;
+  }
+
+  .outfit {
+    font-family: "Outfit", sans-serif;
+  }
+
+  .bg-primary {
+    background-color: #1c398e;
+  }
+
+  .text-primary {
+    color: #1c398e;
+  }
+}
