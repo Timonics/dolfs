@@ -3,8 +3,8 @@ import { Link } from "react-router";
 
 const Team: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col flex-wrap gap-4 lg:gap-6 lg:flex-row items-center">
-      <h1 className="text-6xl flex-1/5 leading-14 max-lg:text-center">
+    <div className="max-w-7xl mx-auto flex flex-col gap-4 lg:gap-6 items-center">
+      <h1 className="text-6xl flex-1/5 leading-14 max-xl:text-center">
         Meet Our <span className="text-primary font-medium">Leadership</span>
       </h1>
       <div className="flex-4/5 flex flex-wrap lg:flex-row items-center justify-center gap-10 p-4 rounded-xl min-h-[400px] mt-4">
@@ -27,9 +27,10 @@ const Team: React.FC = () => {
         </div>
       </div>
       <Link
-        to={""}
+        to={"/our-team"}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         style={{ fontFamily: "Outfit" }}
-        className="p-4 shadow-2xl px-5 rounded-full bg-primary w-fit text-white text-lg"
+        className="p-4 shadow-2xl px-5 rounded-full bg-primary w-fit text-white text-lg mx-auto hover:bg-[#0b1d51] transition hover:scale-105 duration-300 ease-in-out"
       >
         View Our Team
       </Link>

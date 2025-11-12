@@ -83,9 +83,10 @@ const Services: React.FC = () => {
         ))}
       </div>
       <Link
-        to={""}
+        to={"/our-services"}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         style={{ fontFamily: "Outfit" }}
-        className="p-4 shadow-2xl px-5 rounded-full bg-primary w-fit text-white text-lg"
+        className="p-4 shadow-2xl px-5 rounded-full bg-primary w-fit text-white text-lg hover:bg-[#0b1d51] transition hover:scale-105 duration-300 ease-in-out"
       >
         Explore Our Services
       </Link>

@@ -30,18 +30,20 @@ const AboutUs: React.FC = () => {
             consultancy to the maritime sector
           </p>
           <Link
-            to={""}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            to={"about-us"}
             style={{ fontFamily: "Outfit" }}
-            className="p-4 px-5 rounded-lg bg-primary w-fit"
+            className="p-4 px-5 rounded-lg bg-primary w-fit hover:bg-[#0b1d51] transition duration-300 ease-in-out"
           >
             Learn More
           </Link>
         </div>
         <div className="lg:hidden z-10">
           <Link
-            to={""}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            to={"about-us"}
             style={{ fontFamily: "Outfit" }}
-            className="p-4 px-5 rounded-lg bg-primary w-fit text-white text-lg"
+            className="p-4 px-5 rounded-lg bg-primary w-fit text-white text-lg hover:bg-[#0b1d51] transition duration-300 ease-in-out"
           >
             Learn more about us
           </Link>

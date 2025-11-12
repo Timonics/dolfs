@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
         src={heroImg}
         alt="Hero Image"
       />
-      <div className="bg-black/50 lg:bg-black/30 absolute inset-0 z-0" />
+      <div className="bg-black/15 absolute inset-0 z-0" />
       <Nav />
       <div className="z-10 lg:ml-10 mb-5 lg:mb-15">
         <div className="mt-15 max-w-4xl flex flex-col gap-4">
@@ -20,20 +20,20 @@ const Hero: React.FC = () => {
             <span className="text-[#1c398e]">Marine & Shipping Services</span>{" "}
             Across West Africa
           </h1>
-          <p className="text-lg lg:text-2xl font-thin max-w-2xl">
+          <p className="text-lg lg:text-2xl font-extralight max-w-2xl">
             Delivering excellence in marine logistics, offshore operations, and
             vessel support for over 20 years.
           </p>
         </div>
         <div className="mt-10 lg:mt-40 space-y-4">
-          <p className="text-lg lg:text-2xl font-thin">
+          <p className="text-lg lg:text-2xl font-light">
             Trusted by global and local partners for over 20 years.
           </p>
           <div className="flex items-center gap-4 text-lg">
             <Link
-              to={""}
+              to={"/our-services"}
               style={{ fontFamily: "Outfit" }}
-              className="bg-[#1c398e] text-white px-5 py-2 rounded-full"
+              className="bg-[#1c398e] text-white px-5 py-2 rounded-full transition hover:scale-110 duration-300 ease-in-out"
             >
               Our Services
             </Link>
