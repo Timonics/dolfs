@@ -1,5 +1,5 @@
-import { Menu } from "lucide-react";
-import React from "react";
+import { Menu, X } from "lucide-react";
+import React, { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router";
 import { nav } from "../../lib/nav";
 
@@ -7,9 +7,11 @@ const Nav: React.FC = () => {
   const location = useLocation();
   const pathName = location.pathname;
 
+  const [navIsOpen, setNavIsOpen] = useState<boolean>(false);
+
   return (
     <nav
-      className={`flex w-full items-center justify-between z-10 ${
+      className={`flex w-full items-center justify-between z-20 ${
         pathName !== "/"
           ? "py-4 px-4 lg:px-10 shadow-2xl shadow-[#1c398e]/80 rounded-xl bg-[#1c398e]/90 text-white"
           : ""
@@ -43,13 +45,60 @@ const Nav: React.FC = () => {
       <div className="flex items-center gap-4">
         <Link
           to={""}
-          className={`${pathName === "/" ? "bg-white text-black" : "bg-black text-balance"} px-4 py-2 rounded-full text-lg`}
+          className={`${
+            pathName === "/" ? "bg-white text-black" : "bg-black text-balance"
+          } px-4 py-2 rounded-full text-lg`}
           style={{ fontFamily: "Outfit" }}
         >
           {" "}
           Get Quote
         </Link>
-        <Menu className="lg:hidden" />
+        <Menu className="lg:hidden" onClick={() => setNavIsOpen(true)} />
+      </div>
+      <div
+        className={`
+          fixed inset-0 bg-black/30 backdrop-blur-sm bg-opacity-50 md:hidden
+          transition-all duration-300 ease-in-out
+          ${navIsOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
+          `}
+        onClick={() => setNavIsOpen(false)}
+      />
+      <div
+        className={`fixed right-0 top-0 rounded-l-2xl shadow-2xl shadow-blue-900 h-full w-64 bg-blue-100 lg:hidden transform transition-transform ease-in-out duration-300 p-2 flex flex-col gap-4  ${
+          navIsOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-between items-center">
+          <h1 className="text-lg font-bold px-4 py-1.5 bg-black text-white rounded-md text-center">
+            Dolfs
+          </h1>
+          <X
+            className="text-black/75 mr-2"
+            onClick={() => setNavIsOpen(false)}
+          />
+        </div>
+        <div className="mt-5 flex flex-col items-start gap-4 outfit text-black ml-2">
+          {nav.map((item) => (
+            <NavLink
+              className={({ isActive }) =>
+                `${
+                  isActive
+                    ? `text-2xl ${
+                        pathName !== "/"
+                          ? "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-500"
+                          : "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-900"
+                      } font-bold ml-2`
+                    : "font-light hover:scale-125"
+                } transition-all duration-300 ease-in-out`
+              }
+              style={{ fontFamily: "Outfit" }}
+              end
+              to={item.link}
+            >
+              {item.name}
+            </NavLink>
+          ))}
+        </div>
       </div>
     </nav>
   );

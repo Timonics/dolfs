@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
         src={heroImg}
         alt="Hero Image"
       />
-      <div className="bg-black/15 absolute inset-0 z-0" />
+      <div className="bg-black/8 absolute inset-0 z-0" />
       <Nav />
       <div className="z-10 lg:ml-10 mb-5 lg:mb-15">
         <div className="mt-15 max-w-4xl flex flex-col gap-4">
