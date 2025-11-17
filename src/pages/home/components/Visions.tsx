@@ -9,7 +9,8 @@ const Visions: React.FC = () => {
           <div className="row-span-1 border-b-2 border-white/15 flex flex-col justify-center gap-4">
             <h2 className="text-4xl">Our Compass for Excellence.</h2>
             <p className="text-md font-thin max-w-sm">
-              Excellence isn't just our direction - it's the standard that defines us.
+              Excellence isn't just our direction - it's the standard that
+              defines us.
             </p>
           </div>
           <div className="row-span-2 flex flex-col justify-center gap-12">
@@ -41,13 +42,16 @@ const Visions: React.FC = () => {
         <h2 className="text-4xl text-center">Our Compass For Excellence</h2>
         <div className="flex flex-wrap gap-10 mt-10">
           {visions.map((item) => {
+            const Icon = item.icon;
             return (
               <div className="relative shadow-2xl rounded-xl max-w-sm mx-auto border-2 border-black/20 overflow-hidden">
-                <div
-                  className="absolute border w-[70%] h-[80%] bg-black/20 blur-3xl -z-10 bottom-0 right-0 translate-x-10 translate-y-10 rounded-full "
-                />
+                <div className="absolute border w-[70%] h-[80%] bg-black/20 blur-3xl -z-10 bottom-0 right-0 translate-x-10 translate-y-10 rounded-full " />
                 <div className="flex flex-col items-center gap-4 py-6 px-4 rounded-xl z-10 backdrop-blur-lg">
-                  <div className="p-4 w-16 h-16 rounded-full shadow-2xl bg-white/20" />
+                  <div className="p-4 w-16 h-16 rounded-full shadow-2xl bg-white/20">
+                    <Icon className="w-8 h-8" style={{
+                      color: item.color
+                    }}/>
+                  </div>
                   <h1 className="text-3xl font-semibold">{item.name}</h1>
                   <p className="text-center text-lg max-w-sm">{item.content}</p>
                 </div>
