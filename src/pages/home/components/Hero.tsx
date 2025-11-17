@@ -21,8 +21,7 @@ const Hero: React.FC = () => {
             Across West Africa
           </h1>
           <p className="text-lg lg:text-2xl font-extralight max-w-2xl">
-            Delivering excellence in marine logistics, offshore operations, and
-            vessel support for over 20 years.
+            Dolfs provides complete chandling, supply, and vessel support across Nigeria’s ports — delivering reliability, safety, and speed in every operation.
           </p>
         </div>
         <div className="mt-10 lg:mt-40 space-y-4">

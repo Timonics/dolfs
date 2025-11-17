@@ -24,11 +24,13 @@ const Nav: React.FC = () => {
             className={({ isActive }) =>
               `${
                 isActive
-                  ? `scale-125 ${
-                      pathName !== "/" ? "text-black" : "text-[#1c398e]"
+                  ? `text-2xl ${
+                      pathName !== "/"
+                        ? "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-500"
+                        : "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-900"
                     } font-bold`
-                  : "font-light"
-              } transition-all hover:scale-125 duration-300 ease-in-out`
+                  : "font-light hover:scale-125"
+              } transition-all duration-300 ease-in-out`
             }
             style={{ fontFamily: "Outfit" }}
             end
@@ -41,7 +43,7 @@ const Nav: React.FC = () => {
       <div className="flex items-center gap-4">
         <Link
           to={""}
-          className="bg-white text-black px-4 py-2 rounded-full text-lg"
+          className={`${pathName === "/" ? "bg-white text-black" : "bg-black text-balance"} px-4 py-2 rounded-full text-lg`}
           style={{ fontFamily: "Outfit" }}
         >
           {" "}

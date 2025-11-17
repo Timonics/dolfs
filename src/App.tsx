@@ -5,6 +5,7 @@ import AboutPage from "./pages/about-us";
 import ErrorPage from "./pages/error";
 import ServicesPage from "./pages/services";
 import TeamPage from "./pages/team";
+import ContactPage from "./pages/contacts";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "our-team",
     element: <TeamPage />,
+  },
+  {
+    path: "contact-us",
+    element: <ContactPage />,
   },
   {
     path: "*",

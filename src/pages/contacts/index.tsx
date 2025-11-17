@@ -1,0 +1,100 @@
+import React from "react";
+import Nav from "../../components/nav";
+import Footer from "../../components/footer";
+import ContactForm from "./components/ContactForm";
+import ContactInfo from "./components/ContactInfo";
+
+const ContactPage: React.FC = () => {
+  return (
+    <div className="space-y-5">
+      <div className="p-2">
+        <Nav />
+      </div>
+      <div className="max-w-6xl mx-auto p-4 mt-15 flex flex-col items-center">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
+          We are here to assist
+        </h2>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+        <ContactForm />
+        <ContactInfo />
+      </div>
+      {/* <div className="p-2">
+        <div className="max-w-5xl mx-auto flex flex-col gap-6 border p-4 bg-linear-to-br from-gray-800 via-gray-950 to-black text-white rounded-xl">
+          <div className="flex flex-col md:flex-row gap-8 mt-2">
+            <div className="flex-1 flex flex-col gap-4 ml-2">
+              <h3 className="text-2xl font-semibold">Contact Information</h3>
+              <p className="font-thin text-lg">Phone Lines:</p>
+              <div className="bg-gray-300 flex flex-col gap-1 w-fit text-black px-4 py-2 rounded-md ml-2">
+                <h6>+234 802 312 7256</h6>
+                <h6>+234 809 459 1393</h6>
+              </div>
+              <p className="font-thin text-lg">Emails:</p>
+              <div className="bg-gray-300 flex flex-col gap-1 w-fit text-black px-4 py-2 rounded-md ml-2">
+                <h6>info@toptalesshipping.com</h6>
+                <h6>toptalesshipping@gmail.com</h6>
+                <h6>toptalesshipping2004@yahoo.com</h6>
+                <h6>toptales.operations@gmail.com</h6>
+              </div>
+              <p className="font-thin text-lg">Address:</p>
+              <div className="bg-gray-300 flex flex-col gap-1 w-fit text-black px-4 py-2 rounded-md ml-2">
+                <h6>
+                  20, Kofo Abayomi Avenue,
+                  <br />
+                  Apapa Lagos,
+                  <br />
+                  Nigeria.
+                </h6>
+              </div>
+            </div>
+            <div className="flex-1 flex flex-col gap-4 mt-4">
+              <h3 className="text-2xl font-semibold">Follow Us</h3>
+              <p className="font-thin text-lg">Facebook:</p>
+              <div className="bg-gray-300 flex flex-col gap-1 w-fit text-black px-4 py-2 rounded-md ml-4">
+                <h6>Facebook.com/@YourPage</h6>
+              </div>
+              <p className="font-thin text-lg">Twitter: </p>
+              <div className="bg-gray-300 flex flex-col gap-1 w-fit text-black px-4 py-2 rounded-md ml-4">
+                <h6>Twitter.com/@YourHandle</h6>
+              </div>
+              <p className="font-thin text-lg">LinkedIn:</p>
+              <div className="bg-gray-300 flex flex-col gap-1 w-fit text-black px-4 py-2 rounded-md ml-4">
+                <h6>LinkedIn.com/in/YourProfile</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="p-2 space-y-6">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center">
+          Send an Email inquiry
+        </h2>
+        <div className="max-w-5xl mx-auto flex flex-col gap-6 shadow-2xl shadow-black/75 border-black/10 p-4 bg-linear-to-br from-sky-400 to-blue-900  text-white rounded-xl">
+          <div className="flex flex-col md:flex-row gap-8 mt-2">
+            <div className="flex-1 flex flex-col gap-4 ml-2">
+              <h4 className="font-semibold text-lg">Name:</h4>
+              <input className="w-full p-2 border rounded-xl border-white/50 focus:border-[#1c398e]" />
+              <h4 className="font-semibold text-lg mt-4">Email:</h4>
+              <input className="w-full p-2 border rounded-xl border-white/50 focus:border-[#1c398e]" />
+            </div>
+            <div className="flex-1 flex flex-col gap-4 ml-2">
+              <h4 className="font-semibold text-lg">Subject:</h4>
+              <input className="w-full p-2 border rounded-xl border-white/50 focus:border-[#1c398e]" />
+              <h4 className="font-semibold text-lg mt-4">Message:</h4>
+              <input type="textarea" className="w-full p-2 border rounded-xl border-white/50 focus:border-[#1c398e]" />
+            </div>
+          </div>
+          <div className="p-4 rounded-xl w-full bg-primary text-white outfit text-xl font-semibold mt-4 text-center flex items-center justify-center gap-2">
+            <Send />
+            Send Mail
+          </div>
+        </div>
+      </div> */}
+      <div className="p-2">
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default ContactPage;

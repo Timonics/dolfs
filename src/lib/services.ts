@@ -2,6 +2,7 @@ import shipChandlingImf from "../assets/services/ship-chandling.png";
 import lubeOilsImg from "../assets/services/lube-oils.png";
 import sparePartsImg from "../assets/services/spare-parts.png";
 import fendersBargesImg from "../assets/services/fenders-barges.png";
+import { BrushCleaning, Droplets, Ship, Trash2, Utensils } from "lucide-react";
 
 export const services = [
   {
@@ -29,27 +30,37 @@ export const services = [
 export const additionalServices = [
   {
     name: "Fresh Water Supply",
-    img: "",
+    icon: Droplets,
+    color: "text-blue-600",
+    bgColor: "bg-blue-100",
     desc: "Potable and industrial-grade water delivered directly to your vessel — tested and approved for quality assurance.",
   },
   {
     name: "Garbage & Sludge Removal",
-    img: "",
+    icon: Trash2,
+    color: "text-red-600",
+    bgColor: "bg-red-100",
     desc: "Eco-compliant waste and sludge removal services ensuring environmental safety and full adherence to MARPOL standards.",
   },
   {
     name: "Washing of Cargo & Shore Tanks",
-    img: "",
+    icon: BrushCleaning,
+    color: "text-green-600",
+    bgColor: "bg-green-100",
     desc: "Professional cleaning and maintenance of cargo tanks, shore tanks, and storage systems — handled by trained personnel using standard marine cleaning protocols.",
   },
   {
     name: "Catering (Onshore & Offshore)",
-    img: "",
+    icon: Utensils,
+    color: "text-sky-600",
+    bgColor: "bg-sky-100",
     desc: "Full catering and supply solutions for offshore crews. Partnered with global brands to ensure consistent quality and prompt delivery.",
   },
   {
     name: "Marine Logistics & Consultancy",
-    img: "",
+    icon: Ship,
+    color: "text-fuchsia-600",
+    bgColor: "bg-fuchsia-100",
     desc: "Human and material transport between shore and offshore platforms, supported by modern logistics and seasoned coordination.",
   },
 ];

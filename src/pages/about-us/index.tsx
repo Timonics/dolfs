@@ -11,46 +11,48 @@ const AboutPage: React.FC = () => {
       </div>
       <div className="flex space-y-25 flex-col lg:mt-20 justify-center">
         <div className="flex flex-col gap-4 items-center text-center">
-          <h1 className="text-3xl lg:text-5xl lg:leading-15">
+          <h1 className="text-3xl md:text-5xl md:leading-15">
             Anchored in{" "}
-            <span className="text-4xl lg:text-6xl font-semibold text-primary">
+            <span className="text-4xl md:text-6xl font-semibold text-primary">
               Integrity,
             </span>
             <br />
             Powered by{" "}
-            <span className="text-4xl lg:text-6xl font-semibold bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-900 ">
+            <span className="text-4xl md:text-6xl font-semibold bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-900 ">
               Expertise.
             </span>
           </h1>
-          <p className="max-w-xs md:max-w-sm lg:max-w-lg text-sm">
-            With over two decades of trusted operations across West Africa’s
-            maritime sector, Dolfs Shipping & Allied Nigeria Ltd stands as a
-            pillar of reliability, precision, and professionalism in marine
-            logistics and vessel services.
+          <p className="max-w-xs md:max-w-sm lg:max-w-lg md:text-lg outfit">
+            Dolfs is a marine logistics company focused on delivering
+            consistent, dependable support to vessels across Lagos and beyond.
+            Our team brings practical maritime experience and a commitment to
+            doing things right — safely, efficiently, and with full
+            transparency.
           </p>
         </div>
 
-        <div className="py-10 px-4 rounded-2xl bg-black text-white space-y-20">
+        <div className="py-10 px-4 rounded-2xl from-sky-500 to-[#1c398e] bg-linear-to-br text-white space-y-20 mx-2">
           <div className="flex flex-col lg:flex-row gap-4 items-center max-w-7xl mx-auto">
             <div className="w-full h-[400px] p-4">
               <div className="h-full bg-white/10 rounded-xl shadow-2xl shadow-[#1c398e]/20" />
             </div>
             <div className="w-full p-4 space-y-4">
-              <h2 className="text-4xl font-bold">Who we are</h2>
-              <p className="font-thin">
-                Dolfs Shipping & Allied Nigeria Ltd is a wholly indigenous
-                marine services company headquartered in Apapa, Lagos.
+              <h2 className="text-5xl font-bold">Who we are</h2>
+              <p className="font-thin text-lg">
+                Dolfs Shipping & Allied Nigeria Ltd is a young, dynamic marine
+                services company based in Apapa, Lagos. We provide reliable ship
+                chandling, lube oil supply, offshore support, and vessel
+                assistance across Nigeria’s ports.
                 <br />
                 <br />
-                For over 20 years, we’ve been at the forefront of marine
-                logistics, ship chandling, lube oil supply, and offshore
-                support, serving both local and international clients with
-                unwavering commitment to quality.
+                Our team is built on professionals with real hands-on experience
+                in the maritime industry. We combine practical knowledge with a
+                fresh commitment to efficiency, transparency, and safe service
+                delivery.
                 <br />
                 <br />
-                Our operations are built on trust, experience, and a deep
-                understanding of maritime challenges — allowing us to deliver
-                swift, dependable, and safe services that meet global standards.
+                At Dolfs, our focus is simple — deliver dependable marine
+                support you can count on, every single time.
               </p>
             </div>
           </div>
@@ -59,43 +61,37 @@ const AboutPage: React.FC = () => {
               <div className="h-full bg-white/10 rounded-xl shadow-2xl shadow-[#1c398e]/20" />
             </div>
             <div className="w-full p-4 space-y-4">
-              <h2 className="text-4xl font-bold">Our Story</h2>
-              <p className="font-thin">
-                Established in 1997, Dolfs Shipping began with a simple goal: to
-                deliver dependable marine services that rival international
-                standards.
+              <h2 className="text-5xl font-bold">Our Story</h2>
+              <p className="font-thin text-lg">
+                Dolfs was founded with a clear purpose: to create a marine
+                services company that operates with integrity, reliability, and
+                modern efficiency. We saw the gaps in traditional service
+                delivery, and set out to build a company that puts
+                responsibility, responsiveness, and customer trust at the
+                center.
                 <br />
                 <br />
-                From humble beginnings in Lagos to partnerships with leading
-                global shipping companies — including Total Nigeria Plc and
-                Vespucci Marine — our reputation has grown through consistency,
-                expertise, and a deep respect for the sea.
+                From our base in Lagos, we’re steadily expanding our reach and
+                capabilities — building strong relationships, investing in
+                quality resources, and ensuring every operation reflects our
+                commitment to safe and dependable service.
+                <br />
+                <br />
+                Our story is just beginning, but our ambition is clear: to grow
+                into a respected, trustworthy partner for vessels operating
+                across Nigeria and beyond.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col gap-8 items-center text-center">
-          <h1 className="text-4xl lg:text-5xl lg:leading-15 max-w-md lg:max-w-lg">
-            Our Commitment to Safety
-          </h1>
-          <p className="max-w-2xl">
-            Safety isn’t a policy for us — it’s a culture. We strictly comply
-            with international HSE regulations, maintain active staff training
-            programs, and promote the mindset:
-          </p>
-          <div className="px-4 py-4 rounded-xl outfit text-sm lg:text-lg bg-primary text-white font-semibold">
-            “Safety for Me! Safety for You!! Safety for All!!!”
-          </div>
-        </div>
-        
         <div className="max-w-sm mx-auto gap-4 bg-linear-to-br from-gray-800 via-gray-950 to-black text-white rounded-xl p-4 flex flex-col items-center">
           <h5 className="text-lg font-medium">
             Let’s Navigate the Future — Together.
           </h5>
           <hr className="w-[90%] border-white/20" />
           <Link
-            to={"./contact"}
+            to={"/contact-us"}
             className="outfit px-4 py-2 rounded-full text-white bg-primary"
           >
             Contact Our Team.

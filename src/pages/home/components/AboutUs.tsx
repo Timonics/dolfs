@@ -12,9 +12,9 @@ const AboutUs: React.FC = () => {
           className="absolute top-0 object-cover h-full w-full rounded-2xl z-0"
         />
         <div className="z-0 w-full h-full bg-black/60 absolute inset-0" />
-        <div className="w-[550px] h-full absolute top-10 right-5 xl:right-10 bg-white/5 backdrop-blur-3xl rounded-t-xl text-white p-4 flex flex-col gap-4 max-lg:hidden">
+        <div className="w-[600px] h-full absolute top-10 right-5 xl:right-10 bg-white/5 backdrop-blur-3xl rounded-t-xl text-white p-4 flex flex-col gap-4 max-xl:hidden">
           <h2 className="text-2xl px-4 py-1.5 rounded-full bg-black w-fit">
-            About Us
+            Who We Are
           </h2>
           <p className="font-thin text-xl">
             <span className="text-2xl font-light outfit">
@@ -27,7 +27,7 @@ const AboutUs: React.FC = () => {
             surveys/inspections of refined petroleum products, supply of fresh
             water to vessel, supply of fenders and barges, washing of cargo
             tanks, remover of garbage and sludge/slop from vessel and indepth
-            consultancy to the maritime sector
+            consultancy to the maritime sector.
           </p>
           <Link
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -38,7 +38,7 @@ const AboutUs: React.FC = () => {
             Learn More
           </Link>
         </div>
-        <div className="lg:hidden z-10">
+        <div className="xl:hidden z-10">
           <Link
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             to={"about-us"}

@@ -2,44 +2,51 @@ import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { useLocation } from "react-router";
 
 const Footer: React.FC = () => {
+  const location = useLocation();
+  const pathName = location.pathname;
   return (
-    <div className=" bg-primary w-full rounded-xl text-white flex flex-col gap-6 p-4 py-6">
-      <div className="flex flex-col justify-between lg:flex-row gap-8 max-w-7xl mx-auto w-full">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-3xl bg-black px-4 py-1.5 font-bold rounded-lg w-fit h-fit">
-            Dolfs.
-          </h1>
-          <p className="max-w-sm text-lg font-thin">
-            Dolfs is your trusted partner in delivering top-notch solutions
-            tailored to your business needs. We specialize in innovative
-            strategies that drive success and foster growth.
-          </p>
-        </div>
-        <div className="flex flex-col gap-10 lg:flex-row lg:gap-30 mr-10">
-          <div className="flex flex-col gap-4">
-            <h2 className="text-xl font-semibold">Quick Links</h2>
-            <ul className="flex flex-col gap-2 text-lg font-thin">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div className="flex flex-col gap-4">
-            <h2 className="text-xl font-semibold">Follow Us</h2>
-            <div className="flex gap-10">
-              <FaFacebook size={36} />
-              <FaXTwitter size={36} />
-              <BsLinkedin size={36} />
-              <MdEmail size={36} />
+    <div className={`${pathName !== "/contact-us" ? "bg-primary font-semibold rounded-xl" : "bg-black "} text-white w-full flex flex-col gap-6 p-4 py-6`}>
+      {pathName !== "/contact-us" && (
+        <>
+          <div className="flex flex-col justify-between lg:flex-row gap-8 max-w-7xl mx-auto w-full">
+            <div className={`flex flex-col gap-4`}>
+              <h1 className="text-3xl bg-black px-4 py-1.5 font-bold rounded-lg w-fit h-fit">
+                Dolfs.
+              </h1>
+              <p className="max-w-sm text-lg font-thin">
+                Dolfs is your trusted partner in delivering top-notch solutions
+                tailored to your business needs. We specialize in innovative
+                strategies that drive success and foster growth.
+              </p>
+            </div>
+            <div className="flex flex-col gap-10 lg:flex-row lg:gap-30 mr-10">
+              <div className="flex flex-col gap-4">
+                <h2 className="text-xl font-semibold">Quick Links</h2>
+                <ul className="flex flex-col gap-2 text-lg font-thin">
+                  <li>Home</li>
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div className="flex flex-col gap-4">
+                <h2 className="text-xl font-semibold">Follow Us</h2>
+                <div className="flex gap-10">
+                  <FaFacebook size={36} />
+                  <FaXTwitter size={36} />
+                  <BsLinkedin size={36} />
+                  <MdEmail size={36} />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <hr className="border-white/10 border max-lg:mt-5 w-[95%] lg:w-[80%] max-lhidden mx-auto" />
-      <h6 className="text-center text-lg font-thin">
+          <hr className="border-white/10 border max-lg:mt-5 w-[95%] lg:w-[80%] mx-auto" />
+        </>
+      )}
+      <h6 className={`text-center text-lg ${pathName !== "/contact-us" && "font-thin"}`}>
         &copy; {new Date().getFullYear()} Dolfs. All rights reserved.
       </h6>
     </div>
