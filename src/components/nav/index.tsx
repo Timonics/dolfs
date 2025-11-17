@@ -57,7 +57,7 @@ const Nav: React.FC = () => {
       </div>
       <div
         className={`
-          fixed inset-0 bg-black/30 backdrop-blur-sm bg-opacity-50 md:hidden
+          fixed inset-0 bg-black/30 backdrop-blur-sm bg-opacity-50 lg:hidden
           transition-all duration-300 ease-in-out
           ${navIsOpen ? "opacity-100" : "opacity-0 pointer-events-none"}
           `}
