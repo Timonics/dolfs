@@ -64,8 +64,8 @@ const Nav: React.FC = () => {
         onClick={() => setNavIsOpen(false)}
       />
       <div
-        className={`fixed right-0 top-0 rounded-l-2xl shadow-2xl shadow-blue-900 h-full w-64 bg-blue-100 lg:hidden transform transition-transform ease-in-out duration-300 p-2 flex flex-col gap-4  ${
-          navIsOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed right-0 top-0 rounded-l-2xl  h-full w-64 bg-blue-100 lg:hidden transform transition-transform ease-in-out duration-300 p-2 flex flex-col gap-4  ${
+          navIsOpen ? "translate-x-0 shadow-2xl shadow-blue-900" : "translate-x-full"
         }`}
       >
         <div className="flex justify-between items-center">
