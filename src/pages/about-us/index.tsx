@@ -3,6 +3,9 @@ import Nav from "../../components/nav";
 import { Link } from "react-router";
 import Footer from "../../components/footer";
 
+import img1 from "../../assets/about/dolfs-img1.jpg";
+import img2 from "../../assets/about/dolfs-img2.jpg";
+
 const AboutPage: React.FC = () => {
   return (
     <div className="space-y-25">
@@ -34,7 +37,11 @@ const AboutPage: React.FC = () => {
         <div className="py-10 px-4 rounded-2xl from-sky-500 to-[#1c398e] bg-linear-to-br text-white space-y-20 mx-2">
           <div className="flex flex-col lg:flex-row gap-4 items-center max-w-7xl mx-auto">
             <div className="w-full h-[400px] p-4">
-              <div className="h-full bg-white/10 rounded-xl shadow-2xl shadow-[#1c398e]/20" />
+              <img
+                src={img1}
+                alt=""
+                className="h-full w-full shadow-2xl shadow-black/70 opacity-90 rounded-xl object-cover"
+              />
             </div>
             <div className="w-full p-4 space-y-4">
               <h2 className="text-5xl font-bold">Who we are</h2>
@@ -58,7 +65,11 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="flex flex-col lg:flex-row-reverse gap-4 items-center max-w-7xl mx-auto">
             <div className="w-full h-[400px] p-4">
-              <div className="h-full bg-white/10 rounded-xl shadow-2xl shadow-[#1c398e]/20" />
+              <img
+                src={img2}
+                alt=""
+                className="h-full w-full shadow-2xl shadow-black/50 opacity-95 rounded-xl object-cover"
+              />
             </div>
             <div className="w-full p-4 space-y-4">
               <h2 className="text-5xl font-bold">Our Story</h2>
@@ -92,6 +103,7 @@ const AboutPage: React.FC = () => {
           <hr className="w-[90%] border-white/20" />
           <Link
             to={"/contact-us"}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="outfit px-4 py-2 rounded-full text-white bg-primary"
           >
             Contact Our Team.

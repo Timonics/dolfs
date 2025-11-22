@@ -11,16 +11,8 @@ export const nav = [
     name: "Services",
     link: "/our-services",
   },
-  // {
-  //   name: "Clients",
-  //   link: "/clients",
-  // },
   {
     name: "Team",
     link: "/our-team",
-  },
-  {
-    name: "Contacts",
-    link: "/contact-us",
   },
 ];

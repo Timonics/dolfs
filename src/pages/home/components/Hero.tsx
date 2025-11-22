@@ -21,7 +21,9 @@ const Hero: React.FC = () => {
             Across West Africa
           </h1>
           <p className="text-lg lg:text-2xl font-extralight max-w-2xl">
-            Dolfs provides complete chandling, supply, and vessel support across Nigeria’s ports — delivering reliability, safety, and speed in every operation.
+            Dolfs provides complete chandling, supply, and vessel support across
+            Nigeria’s ports — delivering reliability, safety, and speed in every
+            operation.
           </p>
         </div>
         <div className="mt-10 lg:mt-40 space-y-4">
@@ -31,12 +33,18 @@ const Hero: React.FC = () => {
           <div className="flex items-center gap-4 text-lg">
             <Link
               to={"/our-services"}
+              onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}
               style={{ fontFamily: "Outfit" }}
               className="bg-[#1c398e] text-white px-5 py-2 rounded-full transition hover:scale-110 duration-300 ease-in-out"
             >
               Our Services
             </Link>
-            <Link to={""} style={{ fontFamily: "Outfit" }}>
+            <Link
+              to={"/contact-us"}
+              onClick={() => window.scrollTo({ behavior: "smooth", top: 0 })}
+              style={{ fontFamily: "Outfit" }}
+              className="hover transition hover:scale-110 duration-300 ease-in-out hover:text-[#1c398e] hover:font-semibold"
+            >
               Get In Touch
             </Link>
           </div>

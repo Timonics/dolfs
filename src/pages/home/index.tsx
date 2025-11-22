@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
           international HSE regulations, maintain active staff training
           programs, and promote the mindset:
         </p>
-        <div className="px-4 py-4 outfit text-sm lg:text-lg bg-primary text-white font-semibold">
+        <div className="px-4 py-4 outfit text-sm lg:text-lg bg-primary border-4 border-slate-400 shadow-xl shadow-black/30 text-white font-semibold">
           “Safety for Me! Safety for You!! Safety for All!!!”
         </div>
       </div>

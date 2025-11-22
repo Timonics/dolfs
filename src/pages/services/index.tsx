@@ -3,7 +3,6 @@ import Nav from "../../components/nav";
 import { additionalServices, services } from "../../lib/services";
 import Footer from "../../components/footer";
 import { Link } from "react-router";
-// import { CheckCircle } from "lucide-react";
 
 const ServicesPage: React.FC = () => {
   return (
@@ -56,8 +55,12 @@ const ServicesPage: React.FC = () => {
             const Icon = service.icon;
             return (
               <div className="flex items-start gap-4 p-2 w-full">
-                <div className={`h-20 w-24 rounded-xl ${service.bgColor} shadow-xl flex items-center justify-center`}>
-                  <Icon className={`w-10 h-10 ${service.color}`}/>
+                <div
+                  className={`lg:h-20 lg:w-24 w-18 h-16 rounded-xl ${service.bgColor} shadow-xl flex items-center justify-center`}
+                >
+                  <Icon
+                    className={`lg:w-10 lg:h-10 h-8 w-8 ${service.color}`}
+                  />
                 </div>
                 <div className="flex flex-col gap-1 flex-2/3">
                   <h4 className="text-2xl font-medium">{service.name}</h4>
@@ -69,37 +72,7 @@ const ServicesPage: React.FC = () => {
         </div>
       </div>
 
-      {/* <div className="p-2">
-        <div className="max-w-lg mx-auto w-full p-6 flex flex-col items-center gap-6 bg-white/75 rounded-xl lg:bg-black shadow-2xl lg:text-white">
-          <h2 className="text-4xl text-center font-semibold">
-            Built on trust, Driven by Precision
-          </h2>
-          <ul className="space-y-4 font-extralight">
-            <li className="flex items-center gap-2">
-              <CheckCircle size={30} className="flex-1/6" />{" "}
-              <p className="flex-5/6">20+ Years in Marine Operations.</p>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle size={30} className="flex-1/6" />
-              <p className="flex-5/6">
-                {" "}
-                Partnership with Global Leaders (Total, Vespucci Marine, Elmar
-                Shipping).
-              </p>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle size={30} className="flex-1/6" />
-              <p className="flex-5/6"> Certified Team & HSE Compliance.</p>
-            </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle size={30} className="flex-1/6" />
-              <p className="flex-5/6">Swift Response, 24/7 Availability.</p>
-            </li>
-          </ul>
-        </div>
-      </div> */}
-
-      <div className="px-4 py-4 max-w-xl mx-auto text-center rounded-x outfit text-sm lg:text-lg bg-primary mt-10 text-white font-semibold">
+      <div className="px-4 py-4 max-w-xl mx-auto text-center rounded-x outfit text-sm lg:text-lg bg-primary sm:border-4 sm:border-slate-400 shadow-xl shadow-black/30 mt-10 text-white font-semibold">
         Every project we handle reflects our promise — dependable delivery,
         safety-first execution, and top-tier service across every tide
       </div>
@@ -111,6 +84,7 @@ const ServicesPage: React.FC = () => {
         <hr className="w-[90%] border-white/20" />
         <Link
           to={"/contact-us"}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="outfit px-4 py-2 rounded-full text-white bg-primary"
         >
           Contact Our Team.
