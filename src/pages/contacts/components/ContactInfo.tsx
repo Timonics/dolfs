@@ -103,7 +103,7 @@ const ContactInfo: React.FC = () => {
             Quick Response
           </h3>
           <p className="text-black/70 outfit">
-            WeI typically respond to messages within 24 hours. For urgent matters,
+            We typically respond to messages within 24 hours. For urgent matters,
             feel free to reach out via phone or connect with us on social media.
           </p>
         </div>
