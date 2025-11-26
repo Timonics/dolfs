@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { FaFacebook, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
 
 const ContactInfo: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const ContactInfo: React.FC = () => {
           </p>
         </div>
         <div className="space-y-6 mt-5 monte">
-          <div className="flex items-start gap-4">
+          {/* <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
               <Mail className="w-6 h-6 text-blue-900" />
             </div>
@@ -27,7 +27,7 @@ const ContactInfo: React.FC = () => {
                 <h6>toptales.operations@gmail.com</h6>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="flex items-start gap-4">
             <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
@@ -36,8 +36,9 @@ const ContactInfo: React.FC = () => {
             <div className="space-y-2">
               <p className="font-semibold">Phone Lines</p>
               <div className="bg-gray-300 flex flex-col gap-1 w-fit text-black px-4 py-2 rounded-md">
-                <h6>+234 802 312 7256</h6>
-                <h6>+234 809 459 1393</h6>
+                <h6>+234 815 951 6449</h6>
+                <h6>+234 708 723 8593</h6>
+                <h6>+234 808 938 5106</h6>
               </div>
             </div>
           </div>
@@ -79,11 +80,11 @@ const ContactInfo: React.FC = () => {
               Facebook
             </a>
             <a
-              href="https://twitter.com"
-              className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-black bg-transparent flex items-center fira px-2 py-1 rounded-md cursor-pointer"
+              href="https://gmail.com"
+              className="border-red-400 text-red-400 hover:bg-red-400 hover:text-black bg-transparent flex items-center fira px-2 py-1 rounded-md cursor-pointer"
             >
-              <FaXTwitter className="w-5 h-5 mr-2" />
-              
+              <Mail className="w-5 h-5 mr-2" />
+              Gmail
             </a>
             <a
               href="https://linkedin.com"

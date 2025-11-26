@@ -44,13 +44,19 @@ const Visions: React.FC = () => {
           {visions.map((item) => {
             const Icon = item.icon;
             return (
-              <div className="relative shadow-2xl rounded-xl max-w-sm mx-auto border-2 border-black/20 overflow-hidden">
+              <div
+                key={item.name}
+                className="relative shadow-2xl rounded-xl max-w-sm mx-auto border-2 border-black/20 overflow-hidden"
+              >
                 <div className="absolute border w-[70%] h-[80%] bg-black/20 blur-3xl -z-10 bottom-0 right-0 translate-x-10 translate-y-10 rounded-full " />
                 <div className="flex flex-col items-center gap-4 py-6 px-4 rounded-xl z-10 backdrop-blur-lg">
                   <div className="p-4 w-16 h-16 rounded-full shadow-2xl bg-white/20">
-                    <Icon className="w-8 h-8" style={{
-                      color: item.color
-                    }}/>
+                    <Icon
+                      className="w-8 h-8"
+                      style={{
+                        color: item.color,
+                      }}
+                    />
                   </div>
                   <h1 className="text-3xl font-semibold">{item.name}</h1>
                   <p className="text-center text-lg max-w-sm">{item.content}</p>

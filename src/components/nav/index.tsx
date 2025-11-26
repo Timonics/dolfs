@@ -22,8 +22,9 @@ const Nav: React.FC = () => {
       </Link>
       <div className="lg:flex items-center gap-2 lg:gap-6 hidden">
         <>
-          {nav.map((item) => (
+          {nav.slice(0, -1).map((item) => (
             <NavLink
+              key={item.name}
               className={({ isActive }) =>
                 `${
                   isActive
@@ -86,6 +87,7 @@ const Nav: React.FC = () => {
         <div className="mt-5 flex flex-col items-start gap-4 outfit text-black ml-2">
           {nav.map((item) => (
             <NavLink
+              key={item.name}
               className={({ isActive }) =>
                 `${
                   isActive

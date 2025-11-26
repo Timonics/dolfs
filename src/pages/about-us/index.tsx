@@ -46,7 +46,7 @@ const AboutPage: React.FC = () => {
             <div className="w-full p-4 space-y-4">
               <h2 className="text-5xl font-bold">Who we are</h2>
               <p className="font-thin text-lg">
-                Dolfs Shipping & Allied Nigeria Ltd is a young, dynamic marine
+                Dolfs Shipping & Allied Nigeria Ltd is a dynamic marine
                 services company based in Apapa, Lagos. We provide reliable ship
                 chandling, lube oil supply, offshore support, and vessel
                 assistance across Nigeria’s ports.

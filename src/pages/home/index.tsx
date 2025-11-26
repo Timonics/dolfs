@@ -33,7 +33,6 @@ const HomePage: React.FC = () => {
       </div>
       <Services />
       <hr className="border mx-auto border-black/20 max-w-7xl w-full" />
-      {/* <Clients /> */}
       <div className="flex flex-col gap-8 items-center text-center">
         <h1 className="text-4xl lg:text-5xl lg:leading-15 max-w-md lg:max-w-lg">
           Our Commitment to Safety

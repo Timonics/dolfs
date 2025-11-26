@@ -90,7 +90,7 @@ const ContactForm: React.FC = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your name"
-                className="border p-1 pl-2 rounded-md outline-none focus:border-blue-400"
+                className="border border-gray-600 p-1 pl-2 rounded-md outline-none focus:border-blue-400"
                 required
               />
             </div>
@@ -103,7 +103,7 @@ const ContactForm: React.FC = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="your.email@gmail.com"
-                className="border p-1 pl-2 rounded-md outline-none focus:border-blue-400"
+                className="border border-gray-600 p-1 pl-2 rounded-md outline-none focus:border-blue-400"
                 required
               />
             </div>
@@ -117,7 +117,7 @@ const ContactForm: React.FC = () => {
               value={formData.subject}
               onChange={handleChange}
               placeholder="What's this about?"
-              className="border p-1 pl-2 rounded-md outline-none focus:border-blue-400"
+              className="border border-gray-600 p-1 pl-2 rounded-md outline-none focus:border-blue-400"
               required
             />
           </div>
@@ -130,8 +130,8 @@ const ContactForm: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Tell us about your inquiry"
-              className="border p-1 pl-2 rounded-md outline-none focus:border-blue-400"
-              rows={18}
+              className="border border-gray-600 p-1 pl-2 rounded-md outline-none focus:border-blue-400"
+              rows={15}
               required
             />
           </div>

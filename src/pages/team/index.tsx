@@ -3,6 +3,11 @@ import Nav from "../../components/nav";
 import Footer from "../../components/footer";
 import { Link } from "react-router";
 
+import ceoImg from "../../assets/team/ceo-img.jpg";
+import logImg from "../../assets/team/funmi-img.jpg"
+import gMImg from "../../assets/team/dara-img.jpg"
+import acctImg from "../../assets/team/ite-img.jpg"
+
 const TeamPage: React.FC = () => {
   return (
     <div className="space-y-10">
@@ -39,15 +44,16 @@ const TeamPage: React.FC = () => {
               Leadership
             </h2>
             <p className="max-w-sm text-lg outfit">
-              The strength of Top Tales Shipping lies in the experience and
+              The strength of Dolfs Shipping lies in the experience and
               integrity of its leadership — experts who have shaped Nigeria’s
               marine industry with over two decades of proven excellence.
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row gap-4 items-center justify-center max-w-7xl mx-auto">
-            <div className="w-[70%] lg:h-[500px] h-[250px] xl:rounded-full rounded-xl p-4">
-              <div className="h-full bg-white/10 xl:rounded-full rounded-xl shadow-2xl shadow-[#1c398e]/20" />
-            </div>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-7xl mx-auto">
+            <img
+              src={ceoImg}
+              className=" object-cover lg:h-[400px] h-[250px] bg-white/10 rounded-xl shadow-xl shadow-[#1c398e]/50"
+            />
             <div className="w-full p-4 space-y-4">
               <h2 className="text-4xl font-bold">Mrs. Bukola Abu</h2>
               <h5 className="">Managing Director / CEO</h5>
@@ -65,7 +71,7 @@ const TeamPage: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row-reverse gap-4 items-center max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row-reverse gap-4 items-center max-w-7xl mx-auto">
             <div className="w-[70%] lg:h-[500px] h-[250px] xl:rounded-full rounded-xl p-4">
               <div className="h-full bg-white/10 xl:rounded-full rounded-xl shadow-2xl shadow-[#1c398e]/20" />
             </div>
@@ -80,10 +86,11 @@ const TeamPage: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row gap-4 items-center justify-center max-w-7xl mx-auto">
-            <div className="w-[70%] lg:h-[500px] h-[250px] xl:rounded-full rounded-xl p-4">
-              <div className="h-full bg-white/10 xl:rounded-full rounded-xl shadow-2xl shadow-[#1c398e]/20" />
-            </div>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-7xl mx-auto">
+            <img
+              src={gMImg}
+              className=" object-cover lg:h-[400px] h-[250px] bg-white/10 rounded-xl shadow-xl shadow-[#1c398e]/50"
+            />
             <div className="w-full p-4 space-y-4">
               <h2 className="text-4xl font-bold">Mr Oluwadarasimi Abu</h2>
               <h5 className="">General Manager</h5>
@@ -102,7 +109,7 @@ const TeamPage: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row-reverse gap-4 items-center max-w-7xl mx-auto">
+          {/* <div className="flex flex-col lg:flex-row-reverse gap-4 items-center max-w-7xl mx-auto">
             <div className="w-[70%] lg:h-[500px] h-[250px] xl:rounded-full rounded-xl p-4">
               <div className="h-full bg-white/10 xl:rounded-full rounded-xl shadow-2xl shadow-[#1c398e]/20" />
             </div>
@@ -116,11 +123,12 @@ const TeamPage: React.FC = () => {
                 the operations manager at Dolfs Shipping.
               </p>
             </div>
-          </div>
-          <div className="flex flex-col lg:flex-row gap-4 items-center max-w-7xl mx-auto">
-            <div className="w-[70%] lg:h-[500px] h-[250px] xl:rounded-full rounded-xl p-4">
-              <div className="h-full bg-white/10 xl:rounded-full rounded-xl shadow-2xl shadow-[#1c398e]/20" />
-            </div>
+          </div> */}
+          <div className="flex flex-col md:flex-row-reverse gap-4 items-center max-w-7xl mx-auto">
+            <img
+              src={logImg}
+              className="object-cover lg:h-[400px] h-[250px] bg-white/10 rounded-xl shadow-xl shadow-[#1c398e]/50"
+            />
             <div className="w-full p-4 space-y-4">
               <h2 className="text-4xl font-bold">Mr Funmi Odunsanya</h2>
               <h5>Logistics Manager</h5>
@@ -132,10 +140,11 @@ const TeamPage: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row-reverse gap-4 items-center justify-center max-w-7xl mx-auto">
-            <div className="w-[70%] lg:h-[500px] h-[250px] xl:rounded-full rounded-xl p-4">
-              <div className="h-full bg-white/10 xl:rounded-full rounded-xl shadow-2xl shadow-[#1c398e]/20" />
-            </div>
+          <div className="flex flex-col md:flex-row gap-4 items-center max-w-7xl mx-auto">
+            <img
+              src={acctImg}
+              className="object-cover lg:h-[400px] h-[250px] bg-white/10 rounded-xl shadow-xl shadow-[#1c398e]/50"
+            />
             <div className="w-full p-4 space-y-4">
               <h2 className="text-4xl font-bold">
                 Ms. Iteoluwakiishi Oderinde

@@ -33,7 +33,7 @@ const ServicesPage: React.FC = () => {
         </div>
         <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto w-full sm:max-lg:w-[70%] place-items-center">
           {services.map((item) => (
-            <div className="flex flex-col gap-2 shadow-2xl p-2 rounded-xl bg-gray-100 transition hover:scale-105 duration-300 ease-in-out">
+            <div key={item.name} className="flex flex-col gap-2 shadow-2xl p-2 rounded-xl bg-gray-100 transition hover:scale-105 duration-300 ease-in-out">
               <img
                 src={item.img}
                 alt={item.name}
@@ -54,7 +54,7 @@ const ServicesPage: React.FC = () => {
           {additionalServices.map((service) => {
             const Icon = service.icon;
             return (
-              <div className="flex items-start gap-4 p-2 w-full">
+              <div key={service.name} className="flex items-start gap-4 p-2 w-full">
                 <div
                   className={`lg:h-20 lg:w-24 w-18 h-16 rounded-xl ${service.bgColor} shadow-xl flex items-center justify-center`}
                 >
