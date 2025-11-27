@@ -6,6 +6,7 @@ import ErrorPage from "./pages/error";
 import ServicesPage from "./pages/services";
 import TeamPage from "./pages/team";
 import ContactPage from "./pages/contacts";
+import VesselSupport from "./pages/vessel-support";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "our-services",
     element: <ServicesPage />,
+  },
+  {
+    path: "marine-agency-services",
+    element: <VesselSupport />,
   },
   {
     path: "our-team",

@@ -14,18 +14,18 @@ const Team: React.FC = () => {
         <div className="flex flex-col w-68 h-fit items-center p-4 rounded-xl lg:-translate-y-4 -rotate-6 shadow-2xl shadow-black/50 gap-2">
           <img src={ceoImg} alt="Mrs Bukola Abu" className="w-20 h-20 rounded-full bg-black object-center object-cover" />
           <h2 className="text-2xl mt-2 font-semibold text-center">
-            Mrs. Bukola Jumoke Abu
+            Mrs. Abu Olajumoke Olubukola
           </h2>
           <p className="text-lg text-gray-600">Chief Executive Officer</p>
         </div>
         <div className="flex flex-col w-68 h-fit items-center p-4 rotate-2 rounded-xl lg:translate-y-10 shadow-2xl shadow-black/50 gap-2">
           <div className="w-20 h-20 rounded-full bg-black" />
-          <h2 className="text-2xl mt-2 font-semibold text-center">Ms. Nifemi Abu</h2>
+          <h2 className="text-2xl mt-2 font-semibold text-center">Ms. Abu Nifemi</h2>
           <p className="text-lg text-gray-600">Executive Director</p>
         </div>
         <div className="flex flex-col w-68 h-fit items-center -rotate-3 p-4 rounded-xl  shadow-2xl shadow-black/50 gap-2">
           <img src={gMImg} alt="Oluwadarasimi Abu" className="w-20 h-20 rounded-full bg-black object-center object-cover" />
-          <h2 className="text-2xl mt-2 font-semibold text-center">Mr. Oluwadarasimi Abu</h2>
+          <h2 className="text-2xl mt-2 font-semibold text-center">Mr. Abu Oluwadarasimi</h2>
           <p className="text-lg text-gray-600">General Manager</p>
         </div>
       </div>

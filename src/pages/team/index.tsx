@@ -4,9 +4,9 @@ import Footer from "../../components/footer";
 import { Link } from "react-router";
 
 import ceoImg from "../../assets/team/ceo-img.jpg";
-import logImg from "../../assets/team/funmi-img.jpg"
-import gMImg from "../../assets/team/dara-img.jpg"
-import acctImg from "../../assets/team/ite-img.jpg"
+import logImg from "../../assets/team/funmi-img.jpg";
+import gMImg from "../../assets/team/dara-img.jpg";
+import acctImg from "../../assets/team/ite-img.jpg";
 
 const TeamPage: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const TeamPage: React.FC = () => {
       </div>
 
       <div className="flex space-y-25 flex-col lg:mt-20 justify-center">
-        <div className="flex space-y-25 flex-col lg:mt-20 justify-center p-4">
+        <div className="flex space-y-25 flex-col lg:mt-10 justify-center p-4">
           <div className="flex flex-col gap-4 items-center text-center">
             <h1 className="text-3xl lg:text-5xl lg:leading-15">
               Meet the Crew{" "}
@@ -32,7 +32,7 @@ const TeamPage: React.FC = () => {
           </div>
         </div>
 
-        <div className="py-10 px-4 bg-black text-white space-y-20">
+        <div className="py-10 px-4 bg-black text-white space-y-25">
           <div className="max-w-5xl mx-auto w-full flex flex-col lg:flex-row gap-4 items-center justify-between">
             <h2 className="text-6xl font-extrabold max-w-sm text-primary">
               <span
@@ -45,8 +45,8 @@ const TeamPage: React.FC = () => {
             </h2>
             <p className="max-w-sm text-lg outfit">
               The strength of Dolfs Shipping lies in the experience and
-              integrity of its leadership — experts who have shaped Nigeria’s
-              marine industry with over two decades of proven excellence.
+              integrity of its leadership — a team of professionals with real
+              hands-on knowledge of Nigeria’s marine industry.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4 items-center justify-center max-w-7xl mx-auto">
@@ -55,7 +55,9 @@ const TeamPage: React.FC = () => {
               className=" object-cover lg:h-[400px] h-[250px] bg-white/10 rounded-xl shadow-xl shadow-[#1c398e]/50"
             />
             <div className="w-full p-4 space-y-4">
-              <h2 className="text-4xl font-bold">Mrs. Bukola Abu</h2>
+              <h2 className="text-4xl font-bold">
+                Mrs. Abu Olajumoke Olubukola
+              </h2>
               <h5 className="">Managing Director / CEO</h5>
               <p className="font-thin">
                 Mrs. Bukola Olajumoke Abu is an energetic enterpreneur who has

@@ -28,12 +28,12 @@ const Nav: React.FC = () => {
               className={({ isActive }) =>
                 `${
                   isActive
-                    ? `text-2xl ${
+                    ? `text-xl ${
                         pathName !== "/"
                           ? "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-500"
                           : "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-900"
                       } font-bold`
-                    : "font-light hover:scale-125"
+                    : "font-light hover:scale-110"
                 } transition-all duration-300 ease-in-out`
               }
               style={{ fontFamily: "Outfit" }}
@@ -96,7 +96,7 @@ const Nav: React.FC = () => {
                           ? "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-500"
                           : "bg-clip-text text-transparent bg-linear-to-br from-sky-400 to-blue-900"
                       } font-bold ml-2`
-                    : "font-light hover:scale-125"
+                    : "font-light hover:scale-110"
                 } transition-all duration-300 ease-in-out`
               }
               style={{ fontFamily: "Outfit" }}

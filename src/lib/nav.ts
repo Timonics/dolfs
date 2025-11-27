@@ -12,6 +12,10 @@ export const nav = [
     link: "/our-services",
   },
   {
+    name: "Vessel Support",
+    link: "/marine-agency-services",
+  },
+  {
     name: "Team",
     link: "/our-team",
   },
