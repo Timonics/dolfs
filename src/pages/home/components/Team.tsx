@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router";
 
-import ceoImg from "../../../assets/team/ceo-img.jpg"
-import gMImg from "../../../assets/team/dara-img.jpg"
+import ceoImg from "../../../assets/team/ceo-img.jpg";
+import execDirImg from "../../../assets/team/nifemi-img.jpg";
+import gMImg from "../../../assets/team/dara-img.jpg";
 
 const Team: React.FC = () => {
   return (
@@ -12,20 +13,36 @@ const Team: React.FC = () => {
       </h1>
       <div className="flex-4/5 flex flex-wrap lg:flex-row items-center justify-center gap-10 p-4 rounded-xl min-h-[400px] mt-4">
         <div className="flex flex-col w-68 h-fit items-center p-4 rounded-xl lg:-translate-y-4 -rotate-6 shadow-2xl shadow-black/50 gap-2">
-          <img src={ceoImg} alt="Mrs Bukola Abu" className="w-20 h-20 rounded-full bg-black object-center object-cover" />
+          <img
+            src={ceoImg}
+            alt="Mrs Bukola Abu"
+            className="w-20 h-20 rounded-full bg-black object-center object-cover"
+          />
           <h2 className="text-2xl mt-2 font-semibold text-center">
             Mrs. Abu Olajumoke Olubukola
           </h2>
           <p className="text-lg text-gray-600">Chief Executive Officer</p>
         </div>
         <div className="flex flex-col w-68 h-fit items-center p-4 rotate-2 rounded-xl lg:translate-y-10 shadow-2xl shadow-black/50 gap-2">
-          <div className="w-20 h-20 rounded-full bg-black" />
-          <h2 className="text-2xl mt-2 font-semibold text-center">Ms. Abu Nifemi</h2>
+          <img
+            src={execDirImg}
+            alt="Nifemi Abu"
+            className="w-20 h-20 rounded-full bg-black object-center object-cover"
+          />
+          <h2 className="text-2xl mt-2 font-semibold text-center">
+            Ms. Abu Nifemi
+          </h2>
           <p className="text-lg text-gray-600">Executive Director</p>
         </div>
         <div className="flex flex-col w-68 h-fit items-center -rotate-3 p-4 rounded-xl  shadow-2xl shadow-black/50 gap-2">
-          <img src={gMImg} alt="Oluwadarasimi Abu" className="w-20 h-20 rounded-full bg-black object-center object-cover" />
-          <h2 className="text-2xl mt-2 font-semibold text-center">Mr. Abu Oluwadarasimi</h2>
+          <img
+            src={gMImg}
+            alt="Oluwadarasimi Abu"
+            className="w-20 h-20 rounded-full bg-black object-center object-cover"
+          />
+          <h2 className="text-2xl mt-2 font-semibold text-center">
+            Mr. Abu Oluwadarasimi
+          </h2>
           <p className="text-lg text-gray-600">General Manager</p>
         </div>
       </div>

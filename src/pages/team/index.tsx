@@ -4,6 +4,7 @@ import Footer from "../../components/footer";
 import { Link } from "react-router";
 
 import ceoImg from "../../assets/team/ceo-img.jpg";
+import execDirImg from "../../assets/team/nifemi-img.jpg";
 import logImg from "../../assets/team/funmi-img.jpg";
 import gMImg from "../../assets/team/dara-img.jpg";
 import acctImg from "../../assets/team/ite-img.jpg";
@@ -74,9 +75,10 @@ const TeamPage: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row-reverse gap-4 items-center max-w-7xl mx-auto">
-            <div className="w-[70%] lg:h-[500px] h-[250px] xl:rounded-full rounded-xl p-4">
-              <div className="h-full bg-white/10 xl:rounded-full rounded-xl shadow-2xl shadow-[#1c398e]/20" />
-            </div>
+            <img
+              src={execDirImg}
+              className=" object-cover lg:h-[400px] h-[250px] bg-white/10 rounded-xl shadow-xl shadow-[#1c398e]/50"
+            />
             <div className="w-full p-4 space-y-4">
               <h2 className="text-4xl font-bold">Ms. Nifemi Abu</h2>
               <h5>Executive Director</h5>
