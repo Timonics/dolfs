@@ -68,7 +68,7 @@ const TeamPage: React.FC = () => {
                 <br />
                 <br />
                 Mrs. Bukola Olajumoke Abu is a trail blazer with strong passion
-                for his work and a member of IMC which has earned her a position
+                for her work and a member of IMC which has earned her a position
                 as board member in many blue chip comanies. She is the Managing
                 Director/Chief Executive Officer (CEO) of Dolfs Shipping.
               </p>
