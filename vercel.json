@@ -1,14 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "https://www.dolfsmarine.com/$1",
-      "has": [
-        {
-          "type": "host",
-          "value": "(www\\.)?dolfsshipping\\.com"
-        }
-      ]
-    }
+	{ "source": "/(.*)", "destination": "/" }
   ]
 }
